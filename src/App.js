@@ -7,14 +7,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { data } from "./data.js";
 
 function App() {
-  console.log(data);
+  const [search, setSearch] = useState("");
+  console.log(search);
+
   return (
     <div className="App">
       <Container>
         <h1 className="text-center mt-4">Contact Page</h1>
         <Form>
           <InputGroup className="my-3">
-            <Form.Control placeholder="Search Contact" />
+            <Form.Control
+              onChange={(e) => setSearch(e.target.value)}
+              placeholder="Search Contact"
+            />
           </InputGroup>
         </Form>
 
@@ -29,18 +34,9 @@ function App() {
           </thead>
 
           <tbody>
-            <tr>
-              <td>Luke</td>
-              <td>Sky</td>
-              <td>email@gmail.com</td>
-              <td>123-223-4424</td>
-            </tr>
-          </tbody>
-
-          {/* <tbody>
             {data
               .filter((item) => {
-                return search.toLowerCase() === ''
+                return search.toLowerCase() === ""
                   ? item
                   : item.first_name.toLowerCase().includes(search);
               })
@@ -52,7 +48,7 @@ function App() {
                   <td>{item.phone}</td>
                 </tr>
               ))}
-          </tbody> */}
+          </tbody>
         </Table>
       </Container>
     </div>
