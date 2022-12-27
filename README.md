@@ -1,14 +1,14 @@
 ### Filtering feature
 
 ## Description
-a filtering feature that filters thru the data and dispalys the data.
+- Renders the data provided from JSON file using map function and filters the data based on the input using the filter function. 
 
 ## Features
 - filtering thru the data and dispalying it
 - reading and diplaying the user's data
 - using bootstrap for simple UI table
 
-## Need to Add project GIF
+## Filtering the data
 ![caption](filter.gif)
 
 ## Technologies
