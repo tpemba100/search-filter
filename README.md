@@ -8,7 +8,7 @@ a filtering feature that filters thru the data and dispalys the data.
 - 
 
 ## Need to Add project GIF
-![caption](img/todoapp.gif)
+![caption](/src/git-img/filter.gif)
 
 ![alt text](https://github.com/tpemba100/todo-app/blob/master/img/7.png?raw=true)
 
