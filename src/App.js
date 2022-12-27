@@ -7,13 +7,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { data } from "./data.js";
 
 function App() {
+  //a simple state to store the searc hevent
   const [search, setSearch] = useState("");
   console.log(search);
 
   return (
     <div className="App">
       <Container>
-        <h1 className="text-center mt-4">Contact Page</h1>
+        <h1 className="text-center mt-4">Contact Filter</h1>
         <Form>
           <InputGroup className="my-3">
             <Form.Control
